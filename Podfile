@@ -6,5 +6,6 @@ target 'GHClient' do
   use_frameworks!
 
   pod 'Alamofire', '~>4.7.3'
+  pod 'AlamofireImage'
 
 end

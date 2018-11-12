@@ -19,5 +19,8 @@ class NewsTableViewCell: UITableViewCell {
     typeImageView.image = viewModel.typeIconImage
     timeLabel.text = viewModel.time
     contentLabel.attributedText = viewModel.description
+    if let avatorURL = viewModel.avatorURL {
+      avatarImageView.loadImage(withURL: avatorURL)
+    }
   }
 }

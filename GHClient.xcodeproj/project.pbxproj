@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2297582199805B00FD1528 /* UIImageView+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2297572199805B00FD1528 /* UIImageView+Networking.swift */; };
 		7C3EAFCC219010ED0050B3FE /* NewsTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3EAFCB219010ED0050B3FE /* NewsTableViewCellViewModel.swift */; };
 		7C54875B218588F600D46A2F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C54875A218588F600D46A2F /* NewsViewController.swift */; };
 		7C74B25F2191527C00831361 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C74B25E2191527C00831361 /* NetworkClient.swift */; };
@@ -25,6 +26,7 @@
 		48AF446D6217ACC9A3485D6A /* Pods-GHClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHClient.debug.xcconfig"; path = "Target Support Files/Pods-GHClient/Pods-GHClient.debug.xcconfig"; sourceTree = "<group>"; };
 		6F142FAE86C1C2DF173FBB8F /* Pods_GHClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GHClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72822EE8BA4C63B9D1DA02DD /* Pods-GHClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GHClient.release.xcconfig"; path = "Target Support Files/Pods-GHClient/Pods-GHClient.release.xcconfig"; sourceTree = "<group>"; };
+		7C2297572199805B00FD1528 /* UIImageView+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Networking.swift"; sourceTree = "<group>"; };
 		7C3EAFCB219010ED0050B3FE /* NewsTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		7C548755218588F600D46A2F /* GHClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C54875A218588F600D46A2F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7C2297552199803200FD1528 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7C2297562199804100FD1528 /* ImageLoader */,
+				7C84AB6C218A00750045F068 /* FakeData */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		7C2297562199804100FD1528 /* ImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				7C2297572199805B00FD1528 /* UIImageView+Networking.swift */,
+			);
+			name = ImageLoader;
+			sourceTree = "<group>";
+		};
 		7C3EAFD2219017300050B3FE /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +119,7 @@
 		7C548757218588F600D46A2F /* GHClient */ = {
 			isa = PBXGroup;
 			children = (
-				7C84AB6C218A00750045F068 /* FakeData */,
+				7C2297552199803200FD1528 /* Common */,
 				7CF3D31121912DEA0085D690 /* Application */,
 				7CF3D31C21912E300085D690 /* Networking */,
 				7C3EAFD2219017300050B3FE /* News */,
@@ -265,6 +284,7 @@
 				7CA4E12B218AC016008F841F /* NewsTableViewCell.swift in Sources */,
 				7CF3D31E21912E3C0085D690 /* RequestHeaderBuilder.swift in Sources */,
 				7C74B25F2191527C00831361 /* NetworkClient.swift in Sources */,
+				7C2297582199805B00FD1528 /* UIImageView+Networking.swift in Sources */,
 				7C3EAFCC219010ED0050B3FE /* NewsTableViewCellViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
