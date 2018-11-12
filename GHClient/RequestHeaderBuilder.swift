@@ -12,11 +12,6 @@ class RequestHeaderBuilder {
   private var username: String?
   private var password: String?
   
-  init() {
-    self.username = KeychainAccessor().username()
-    self.password = KeychainAccessor().password()
-  }
-  
   func configure(username: String) -> RequestHeaderBuilder {
     self.username = username
     return self
